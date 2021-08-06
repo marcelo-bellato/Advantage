@@ -24,7 +24,7 @@ public class BaseTest {
 		File arquivo = ss.getScreenshotAs(OutputType.FILE);
 		FileUtils.copyFile(arquivo, new File("target" + File.separator + "screenshot" +  
 				File.separator + testName.getMethodName() + ".jpg"));		
-		killDriver();
+	//	killDriver();
 	}
 
 }

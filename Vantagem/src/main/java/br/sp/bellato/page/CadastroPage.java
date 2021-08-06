@@ -72,6 +72,12 @@ public class CadastroPage extends BasePage{
 		return dsl.obterValorCampo("//label[contains(text(),\"Your email address isn't formatted correctly\")]");
 	}
 	
+	public String obterlogin(){
+		return dsl.obterLogCampo("menuUserLink");
+	}
+	
+	
+	
 	
 
 }

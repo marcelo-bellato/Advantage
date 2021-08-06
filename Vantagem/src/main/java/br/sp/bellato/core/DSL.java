@@ -40,6 +40,12 @@ public class DSL {
 		return getDriver().findElement(By.xpath(name)).getText();
 	}
 	
+	public String obterLogCampo(String log) {
+		return getDriver().findElement(By.id(log)).getText();
+	}
+	
+	
+	
 	
 	
 	

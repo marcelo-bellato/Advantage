@@ -1,6 +1,7 @@
 package br.sp.bellato.test;
 import static br.sp.bellato.core.DriverFactory.getDriver;
 
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -38,6 +39,8 @@ private CadastroPage page;
 		page.setCep("06080-000");
 		page.setIagree();
 		page.setRegister();
+		Thread.sleep(1000);
+		Assert.assertEquals("Marcelo229", page.obterlogin());
 		
 						
 		}
